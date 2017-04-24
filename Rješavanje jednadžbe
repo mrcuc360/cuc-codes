@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+main(){
+	
+	float brojevi[2], rezultati[2];
+	
+	printf("Unesite prvi broj: ");
+	scanf("%f", &brojevi[0]);
+	
+	printf("\nUnesite drugi broj: ");
+	scanf("%f", &brojevi[1]);
+	
+	rezultati[0] = (pow(brojevi[0], 4)*brojevi[1]-pow(brojevi[0],2)*pow(brojevi[1],3))/
+					(pow(brojevi[0],5)*brojevi[1]-brojevi[0]*pow(brojevi[1],5));
+					
+	
+	rezultati[1] = brojevi[0]/(pow(brojevi[0],2)+pow(brojevi[1],2));
+	
+	
+	printf("\n\nUneseni brojevi su: %.f i %.f", brojevi[0], brojevi[1]);
+	
+	printf("\nIzraz 1 = %f", rezultati[0]);
+	printf("\nIzraz 2 = %f", rezultati[1]);
+	
+}
