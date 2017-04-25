@@ -1,0 +1,32 @@
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+
+main(){
+	float a, b, BMI;
+	
+	printf("Unesite masu u kilogramima: ");
+	scanf("%f", &a);
+	
+	printf("\n\nUnesite visinu u metrima: ");
+	scanf("%f", &b);
+	
+	BMI = a / pow(b, 2);
+	printf("\n\nTvoj BMI iznosi: %f", BMI);
+	
+	if (BMI <=20) {
+		printf("\n\nSpadate u kategoriju POTHRANJENOSTI");
+		
+	}
+	
+	else if (BMI<=25){
+		printf("\n Spadate u kategoriju IDEALNE TEZINE! ");
+	}
+	
+	else if (BMI>25, BMI<=30){
+		printf("\n\n PREKOMJERNA TEZINA!");
+		
+	}	else if (BMI>30) {
+		printf("\n\n PRETILOST!");
+	}
+}
