@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+	char korisnickiIzbor;
+	float masa_u_lb, masa_u_kg;
+	
+	printf("(A) u metricki");
+	printf("\n(B) u angloamericki");
+	printf("\nUnesite vas izbor: ");
+	scanf(" %c",&korisnickiIzbor);
+
+	if (korisnickiIzbor=='A' || korisnickiIzbor=='a'){
+		
+		printf("Unesite masu u lb: ");
+		scanf("%f", &masa_u_lb);
+		
+		masa_u_kg = masa_u_lb/2.2046;
+		
+		printf("\nIZ METRICKOGA U ANGLOAMERICKI");
+		printf("\n%f kg je %f lb.", masa_u_kg, masa_u_lb);
+
+	}
+	else if(korisnickiIzbor=='B' || korisnickiIzbor=='b'){
+		
+		printf("Unesite masu u kg: ");
+		scanf("%f", &masa_u_kg);
+		
+		masa_u_lb = masa_u_kg*2.2046;
+		
+		printf("\nIZ ANGLOAMERICKI U METRICKI");
+		printf("\n%f lb je %f kg.", masa_u_lb, masa_u_kg);
+		
+	}
+	else{
+		printf("\n\n%c je nepostojeci izbor.", korisnickiIzbor);
+	}
+}
