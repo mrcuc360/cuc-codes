@@ -1,0 +1,19 @@
+#include <conio.h>
+#include <stdio.h>
+
+main(){
+	int km;
+	float ppg, pg;
+	printf("1.Napunjen je spremnik goriva od automobila do vrha.");
+	printf("\n2.unesite koliko ste kilometara prosli, i molimo Vas bez decimale: ");
+	scanf("%d", &km);
+	printf("\n3.Sada se ide opet napuniti spremnik goriva do vrha.");
+	printf("\n4.procitati na agregatu na benzinskoj postaji koliko se litara goriva natocilo. \nI unesite tocan podatak sa agregata.");
+	scanf("%f", &pg); //pg=potroseno gorivo u litrama i decilitrima
+	ppg=(pg/km)*100; //ppg=prosjecna potrosnja goriva na 100km
+	printf("\nZa %d km potroseno je %.2f l pa auto prosjecno trosi %.2f na 100km", km, pg, ppg);
+	getch();
+	
+	
+	
+}
