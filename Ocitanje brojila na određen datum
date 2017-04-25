@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <conio.h>
+
+typedef struct {
+	char datum[6+1];
+	int prije;
+	int poslije;
+	int potrosak;
+}Ocitanje;
+
+main(){
+	
+	Ocitanje ocitanje1, ocitanje2, ocitanje3;
+	
+	printf("Unesite datum 1. ocitanja: ");
+	scanf("%s", &ocitanje1.datum);
+	printf("Unesite stanje prije za 1. ocitanje: ");
+	scanf("%d", &ocitanje1.prije);
+	printf("Unesite stanje poslije za 1. ocitanje: ");
+	scanf("%d", &ocitanje1.poslije);
+	
+	
+	
+	printf("\nUnesite datum 2. ocitanja: ");
+	scanf("%s", &ocitanje2.datum);
+	printf("Unesite stanje prije za 2. ocitanje: ");
+	scanf("%d", &ocitanje2.prije);
+	printf("Unesite stanje poslije za 2. ocitanje: ");
+	scanf("%d", &ocitanje2.poslije);
+	
+	
+	
+	printf("\nUnesite datum 3. ocitanja: ");
+	scanf("%s", &ocitanje3.datum);
+	printf("Unesite stanje prije za 3. ocitanje: ");
+	scanf("%d", &ocitanje3.prije);
+	printf("Unesite stanje poslije za 3. ocitanje: ");
+	scanf("%d", &ocitanje3.poslije);
+	
+	
+	ocitanje1.potrosak = ocitanje1.poslije - ocitanje1.prije;
+	ocitanje2.potrosak = ocitanje2.poslije - ocitanje2.prije;
+	ocitanje3.potrosak = ocitanje3.poslije - ocitanje3.prije;
+	
+	
+	printf("\n\nR.Br\tDatum\tPrije\tPoslije\tPotrosak");
+	printf("\n1.\t%s\t%d\t%d\t%d", ocitanje1.datum, ocitanje1.prije, ocitanje1.poslije, ocitanje1.potrosak);
+	printf("\n1.\t%s\t%d\t%d\t%d", ocitanje2.datum, ocitanje2.prije, ocitanje2.poslije, ocitanje2.potrosak);
+	printf("\n1.\t%s\t%d\t%d\t%d", ocitanje3.datum, ocitanje3.prije, ocitanje3.poslije, ocitanje3.potrosak);
+	
+	
+	printf("\n\nPROSJECNI POTROSAK: %.2f", (ocitanje1.potrosak+ocitanje2.potrosak+ocitanje3.potrosak)/3.0);
+	
+
+
+	
+	
+}
