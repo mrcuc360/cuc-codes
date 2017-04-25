@@ -1,0 +1,13 @@
+
+#include<stdio.h>
+
+main(){
+       char znak;
+       int sljedeci = znak+1;
+       printf("Unesite neki znak sa tipkovnice: ");
+       scanf(" %c",&znak);
+       printf("Znak %c se nalazi na %d mjestu u ASCII kodu.\n",znak,znak);
+       printf("Odmah nakon znaka %c se nalazi znak %c u ASCII kodu",znak,sljedeci);
+       scanf(" %c",&sljedeci);
+       getch();
+       }
