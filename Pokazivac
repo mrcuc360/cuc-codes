@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+	double x=10, y;
+	double *px;
+	
+	px=&x;
+	y=*px;
+	
+	printf("Sada je jasno da je x=%5.1lf=y%5.1lf\n", x, y);
+	printf("Moglo se pisati i ovako: \n");
+	printf("Analogno se dobije koristeci dereferenciranje: x=%5.1lf=y=%5.1lf\n", x, *px);
+	getch();
+		
+	
+}
